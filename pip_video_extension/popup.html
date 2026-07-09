@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PiP Auto-Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <div class="logo-area">
+        <div class="logo-icon"></div>
+        <h1>PiP Auto-Play (sam)</h1>
+      </div>
+      <span class="status-badge">Active</span>
+    </header>
+
+    <main class="main-content">
+      <button id="toggle-pip-btn" class="primary-btn pip-trigger-btn">
+        <span class="btn-icon">📺</span>
+        Toggle Picture-in-Picture
+      </button>
+
+      <button id="open-player-btn" class="secondary-btn">
+        <span class="btn-icon">▶</span>
+        Open Custom Player
+      </button>
+
+      <hr class="divider">
+
+      <div class="settings-group">
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-title">Global Auto-Play</span>
+            <span class="setting-desc">Apply PiP playback logic on other websites</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="global-toggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Seamlessly transitioning picture-in-picture</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
